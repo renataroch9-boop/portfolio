@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renata Rocha | Executive Product Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter (Sleek Sans) & JetBrains Mono (High Rigor) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons for sophisticated glyph rendering -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Custom Tailwind Configurations -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        brand: {
+                            bg: '#090C15',      /* Deep obsidian graphite background */
+                            card: '#111625',    /* Sophisticated dark graphite card */
+                            border: '#1E2638',  /* Muted steel border */
+                            primary: '#06B6D4', /* Crisp Ice Cyan */
+                            primaryGlow: 'rgba(6, 182, 212, 0.15)',
+                            secondary: '#F59E0B', /* Burnished Amber/Gold */
+                            success: '#14B8A6'   /* Muted Sage/Teal */
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #090c15;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #1e2638;
+            border-radius: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #2e3b56;
+        }
+        .glow-cyan {
+            box-shadow: 0 0 20px -5px rgba(6, 182, 212, 0.2);
+        }
+        .glow-amber {
+            box-shadow: 0 0 20px -5px rgba(245, 158, 11, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-[#090C15] text-slate-100 font-sans antialiased selection:bg-cyan-500/30 selection:text-white custom-scrollbar">
+
+    <!-- Header / Global Status bar -->
+    <header class="sticky top-0 z-50 bg-[#090C15]/85 backdrop-blur-md border-b border-zinc-800/60 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-3.5">
+                <div class="h-9 w-9 rounded-lg bg-cyan-600 flex items-center justify-center font-mono font-bold text-sm text-white glow-cyan">
+                    RR
+                </div>
+                <div>
+                    <h1 class="text-base font-bold tracking-tight text-slate-100">Renata Rocha</h1>
+                    <p class="text-[10px] text-cyan-400 font-mono tracking-wider uppercase font-medium">Head of Product | Systems Architect</p>
+                </div>
+            </div>
+            
+            <!-- Global Navigation Tabs -->
+            <nav class="flex items-center gap-1 bg-zinc-900/60 p-1 rounded-xl border border-zinc-800">
+                <button onclick="switchTab('start-here')" class="nav-tab px-4 py-1.5 text-xs font-semibold rounded-lg transition-all duration-200 bg-cyan-600 text-white" id="tab-start-here">Start Here</button>
+                <button onclick="switchTab('pov-model')" class="nav-tab px-4 py-1.5 text-xs font-medium rounded-lg transition-all duration-200 text-slate-400 hover:text-slate-200" id="tab-pov-model">POV &amp; Operating Model</button>
+                <button onclick="switchTab('case-studies')" class="nav-tab px-4 py-1.5 text-xs font-medium rounded-lg transition-all duration-200 text-slate-400 hover:text-slate-200" id="tab-case-studies">Case Studies</button>
+                <button onclick="switchTab('appendix')" class="nav-tab px-4 py-1.5 text-xs font-medium rounded-lg transition-all duration-200 text-slate-400 hover:text-slate-200" id="tab-appendix">Sanitized Appendix</button>
+            </nav>
+
+            <div class="flex items-center gap-2 text-xs font-mono">
+                <span class="inline-flex h-2.5 w-2.5 rounded-full bg-teal-400 animate-pulse glow-cyan"></span>
+                <span class="text-slate-400 font-medium">Active Transit Posture</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-10">
+
+        <!-- SECTION 1: START HERE -->
+        <section id="sec-start-here" class="space-y-12 transition-all duration-300">
+            <!-- Strategic Narrative Hook -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                <div class="lg:col-span-8 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-[10px] font-mono tracking-wide uppercase">
+                        <i data-lucide="shield-check" class="h-3.5 w-3.5"></i>
+                        <span>Executive Identity: INTP-5w6 (The Architect of Logic)</span>
+                    </div>
+                    <h2 class="text-3xl lg:text-5xl font-black tracking-tight leading-none text-slate-100">
+                        I build <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-teal-400 to-amber-400">high-assurance platform infrastructure</span> and operating models that scale without losing system integrity.
+                    </h2>
+                    <p class="text-sm text-slate-400 leading-relaxed max-w-2xl">
+                        A concise portfolio companion to my resume, optimized for fast signal: what I build, how I lead, and the outcomes I’ve driven. I design clear system boundaries, versioned interfaces, and transactional invariants inside trust-sensitive, highly regulated workflows.
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-3 py-1 bg-zinc-900 border border-zinc-800 text-slate-300 text-xs font-mono rounded-lg">Head of Product</span>
+                        <span class="px-3 py-1 bg-zinc-900 border border-zinc-800 text-slate-300 text-xs font-mono rounded-lg">VP of Product</span>
+                        <span class="px-3 py-1 bg-zinc-900 border border-zinc-800 text-slate-300 text-xs font-mono rounded-lg">CPO (Growth-Stage)</span>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-4 bg-zinc-900/20 border border-zinc-800/80 rounded-2xl p-6 space-y-4 glow-cyan">
+                    <h3 class="text-xs font-bold text-slate-400 font-mono tracking-wider uppercase">ARCHETYPE BEHAVIORS</h3>
+                    <div class="space-y-3.5 text-xs">
+                        <div class="flex gap-2.5">
+                            <i data-lucide="cpu" class="h-4.5 w-4.5 text-cyan-400 shrink-0"></i>
+                            <p class="text-slate-300"><strong class="text-cyan-300">Ambitious Analyst:</strong> Approach complex, nebulous projects with a goal-oriented mindset focused on achieving results as efficiently as possible.</p>
+                        </div>
+                        <div class="flex gap-2.5">
+                            <i data-lucide="git-fork" class="h-4.5 w-4.5 text-amber-400 shrink-0"></i>
+                            <p class="text-slate-300"><strong class="text-amber-300">Skeptical Pragmatist:</strong> Wary of traditional consensus loops. Drive outcomes through explicit, written architectural contracts (ADRs).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quantitative Performance Metrics Grid -->
+            <div class="space-y-4">
+                <h3 class="text-xs font-mono text-cyan-400 uppercase tracking-widest font-semibold">Proof at a Glance (Impact Records)</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+                    <div class="bg-zinc-900/30 border border-zinc-800/60 p-5 rounded-xl space-y-1 hover:border-cyan-500/20 transition-all duration-300">
+                        <div class="text-2xl font-black text-cyan-400">$2B+</div>
+                        <div class="text-[10px] font-bold text-slate-300 uppercase tracking-wide">Platform Scaling</div>
+                        <p class="text-[10px] text-slate-500 leading-snug">Processed annually under strict transactional invariants.</p>
+                    </div>
+                    <div class="bg-zinc-900/30 border border-zinc-800/60 p-5 rounded-xl space-y-1 hover:border-teal-500/20 transition-all duration-300">
+                        <div class="text-2xl font-black text-teal-400">40%</div>
+                        <div class="text-[10px] font-bold text-slate-300 uppercase tracking-wide">Velocity Boost</div>
+                        <p class="text-[10px] text-slate-500 leading-snug">Reduced partner integration timelines by separating UX from ledger.</p>
+                    </div>
+                    <div class="bg-zinc-900/30 border border-zinc-800/60 p-5 rounded-xl space-y-1 hover:border-amber-500/20 transition-all duration-300">
+                        <div class="text-2xl font-black text-amber-400">~1/3</div>
+                        <div class="text-[10px] font-bold text-slate-300 uppercase tracking-wide">Cost Optimization</div>
+                        <p class="text-[10px] text-slate-500 leading-snug">Reduced AWS/Go runtime costs compared to old GCP monolith infrastructure.</p>
+                    </div>
+                    <div class="bg-zinc-900/30 border border-zinc-800/60 p-5 rounded-xl space-y-1 hover:border-cyan-500/20 transition-all duration-300">
+                        <div class="text-2xl font-black text-cyan-300">80%</div>
+                        <div class="text-[10px] font-bold text-slate-300 uppercase tracking-wide">Process Triage</div>
+                        <p class="text-[10px] text-slate-500 leading-snug">Increased automated severity classification via API ontologies.</p>
+                    </div>
+                    <div class="bg-zinc-900/30 border border-zinc-800/60 p-5 rounded-xl space-y-1 hover:border-teal-500/20 transition-all duration-300">
+                        <div class="text-2xl font-black text-slate-200">$20M+</div>
+                        <div class="text-[10px] font-bold text-slate-300 uppercase tracking-wide">0-1 DLT Launch</div>
+                        <p class="text-[10px] text-slate-500 leading-snug">Distributed benefit tracking to 1M+ endpoints with zero ledger mismatch.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The Partnership Triad -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <div class="p-6 bg-zinc-900/20 border border-zinc-800 rounded-2xl space-y-4">
+                    <div class="flex items-center gap-2 text-cyan-400">
+                        <i data-lucide="terminal" class="h-5 w-5"></i>
+                        <h4 class="text-sm font-bold uppercase tracking-wider font-mono">Partnership with Eng</h4>
+                    </div>
+                    <ul class="space-y-2 text-xs text-slate-400 list-disc pl-4 leading-relaxed">
+                        <li>Align early on system invariants, structural data boundaries, and database constraints.</li>
+                        <li>Maintain developer focus by replacing back-to-back meeting syncs with structured, asynchronous ADR design loops.</li>
+                    </ul>
+                </div>
+                <div class="p-6 bg-zinc-900/20 border border-zinc-800 rounded-2xl space-y-4">
+                    <div class="flex items-center gap-2 text-teal-400">
+                        <i data-lucide="shield-alert" class="h-5 w-5"></i>
+                        <h4 class="text-sm font-bold uppercase tracking-wider font-mono">Partnership with Risk</h4>
+                    </div>
+                    <ul class="space-y-2 text-xs text-slate-400 list-disc pl-4 leading-relaxed">
+                        <li>Translate strict compliance policy and anti-fraud protocols directly into code gates (e.g., Maker-Checker parameters).</li>
+                        <li>Expose auditable ledger footprints and step-up validations by design.</li>
+                    </ul>
+                </div>
+                <div class="p-6 bg-zinc-900/20 border border-zinc-800 rounded-2xl space-y-4">
+                    <div class="flex items-center gap-2 text-amber-400">
+                        <i data-lucide="trending-up" class="h-5 w-5"></i>
+                        <h4 class="text-sm font-bold uppercase tracking-wider font-mono">Partnership with GTM</h4>
+                    </div>
+                    <ul class="space-y-2 text-xs text-slate-400 list-disc pl-4 leading-relaxed">
+                        <li>Map underlying modular API engines into clear client experiences and self-onboarding partner hubs.</li>
+                        <li>Prioritize runtime telemetry and customer-specific SLO alerts from day one.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: POV & OPERATING MODEL -->
+        <section id="sec-pov-model" class="hidden space-y-12 transition-all duration-300">
+            <!-- Executive POV -->
+            <div class="space-y-6">
+                <div class="border-b border-zinc-800 pb-3">
+                    <h2 class="text-2xl font-black text-slate-200">The Executive POV: Principles + Receipts</h2>
+                    <p class="text-xs text-slate-500 font-mono mt-1 uppercase tracking-wider">North Star: Reduce coupling and coordination drag to protect shipping velocity.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="p-6 bg-zinc-900/10 border border-zinc-800 rounded-2xl space-y-3 hover:border-cyan-500/30 transition-all duration-300">
+                        <span class="text-[10px] font-mono text-cyan-400 font-bold uppercase tracking-widest block">01 / Structural Separation</span>
+                        <h3 class="text-base font-bold text-slate-200">Decouple System of Record from Experience Layers</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">Separate immutable transactional core layers from dynamic client layouts using strict versioned API boundaries. This decouples roadmaps and stops custom client projects from bottlenecking master engines.</p>
+                        <div class="pt-2 border-t border-zinc-800/80 text-[11px] text-teal-400 font-mono">
+                            <strong>Receipt:</strong> 40% reduction in partner integration time-to-market.
+                        </div>
+                    </div>
+
+                    <div class="p-6 bg-zinc-900/10 border border-zinc-800 rounded-2xl space-y-3 hover:border-teal-500/30 transition-all duration-300">
+                        <span class="text-[10px] font-mono text-teal-400 font-bold uppercase tracking-widest block">02 / Native Security</span>
+                        <h3 class="text-base font-bold text-slate-200">Design Trust Primitives, Not Patches</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">Do not append auditability, identity verification, or transaction safety as post-launch adapters. Model dual-control flows and step-up prompts directly into core schemas.</p>
+                        <div class="pt-2 border-t border-zinc-800/80 text-[11px] text-teal-400 font-mono">
+                            <strong>Receipt:</strong> Native maker-checker, transaction rate-limiting, and liveness constraints deployed to neutralize fraud.
+                        </div>
+                    </div>
+
+                    <div class="p-6 bg-zinc-900/10 border border-zinc-800 rounded-2xl space-y-3 hover:border-amber-500/30 transition-all duration-300">
+                        <span class="text-[10px] font-mono text-amber-400 font-bold uppercase tracking-widest block">03 / Asynchronous Alignment</span>
+                        <h3 class="text-base font-bold text-slate-200">Written Contracts Beat Circular Meeting Syncs</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">Teams do not need recurring alignment calls; they need high-precision specifications, architecture decision records (ADRs), and executable code contracts.</p>
+                        <div class="pt-2 border-t border-zinc-800/80 text-[11px] text-teal-400 font-mono">
+                            <strong>Receipt:</strong> Replaced meetings with asynchronous specs, recovering up to 4 hours of focus time per developer daily.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Operating Model -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start pt-6 border-t border-zinc-800">
+                <div class="lg:col-span-6 space-y-6">
+                    <h3 class="text-lg font-bold text-slate-200">The Execution Engine: Platform Operating Cadence</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        I build operational cadences exactly like system architectures: inputs must be predictable (high-signal requirements), verification must be automated (test gates), and output must be measurable (live monitoring metrics).
+                    </p>
+
+                    <div class="space-y-4">
+                        <div class="flex gap-4">
+                            <div class="h-8 w-8 rounded bg-zinc-900 flex items-center justify-center font-mono text-xs text-cyan-400 font-bold border border-zinc-850 shrink-0">1</div>
+                            <div>
+                                <h4 class="text-xs font-bold text-slate-300 font-mono uppercase">Document-First Planning (ADR Loop)</h4>
+                                <p class="text-[11px] text-slate-500 leading-relaxed mt-1">Every major schema upgrade, API integration point, and core feature undergoes an asynchronous markdown review (ADR) prior to development.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="h-8 w-8 rounded bg-zinc-900 flex items-center justify-center font-mono text-xs text-cyan-400 font-bold border border-zinc-850 shrink-0">2</div>
+                            <div>
+                                <h4 class="text-xs font-bold text-slate-300 font-mono uppercase">Org Design Decoupling</h4>
+                                <p class="text-[11px] text-slate-500 leading-relaxed mt-1">I divide engineering into decoupled pods: <strong>Experience Squads</strong> (onboarding portals, checkout widgets) and <strong>Platform Pods</strong> (immutability, database performance, ledgers). Squad communication occurs strictly through versioned interfaces.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Custom visual of the async operating flow -->
+                <div class="lg:col-span-6 bg-zinc-950 p-6 rounded-2xl border border-zinc-800 space-y-4">
+                    <h4 class="text-xs font-semibold text-slate-400 font-mono uppercase tracking-wider">Asynchronous Flow &amp; Gates</h4>
+                    <div class="font-mono text-[10px] text-slate-500 space-y-3 bg-zinc-900/60 p-4 rounded-xl border border-zinc-850 overflow-x-auto">
+                        <div>[Product Brief / ADR Proposed]</div>
+                        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│</div>
+                        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▼ (Asynchronous Spec Reviews &amp; Contract Sign-offs)</div>
+                        <div>[Schema and Interface Locking]</div>
+                        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│</div>
+                        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▼ (Zero-Meeting Independent Development Sprints)</div>
+                        <div>[Automated CI/CD Verification Gates]</div>
+                        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│</div>
+                        <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▼ (Production Deployment &amp; Domain Telemetry Active)</div>
+                        <div class="text-teal-400">[Continuous Delivery - Target SLOs Tracked in Real Time]</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: SIGNATURE CASE STUDIES -->
+        <section id="sec-case-studies" class="hidden space-y-8 transition-all duration-300">
+            <!-- Selector Tabs for Case Studies -->
+            <div class="flex flex-wrap gap-2 border-b border-zinc-800 pb-3">
+                <button onclick="switchCaseStudy('cs-modernization')" class="cs-tab px-4 py-2 text-xs font-mono font-medium rounded-lg bg-cyan-600 text-white" id="cs-tab-modernization">01 / Platform Modernization</button>
+                <button onclick="switchCaseStudy('cs-taxonomy')" class="cs-tab px-4 py-2 text-xs font-mono font-medium rounded-lg text-slate-400 hover:text-slate-200" id="cs-tab-taxonomy">02 / Workflow Taxonomy</button>
+                <button onclick="switchCaseStudy('cs-benefits')" class="cs-tab px-4 py-2 text-xs font-mono font-medium rounded-lg text-slate-400 hover:text-slate-200" id="cs-tab-benefits">03 / 0-1 Public Benefits</button>
+            </div>
+
+            <!-- Case Study Content Panels -->
+            <div class="bg-zinc-900/10 border border-zinc-800 rounded-2xl p-6 lg:p-8">
+                
+                <!-- CS 1: MODERNIZATION -->
+                <div id="cs-modernization" class="cs-content space-y-6">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 border-b border-zinc-800/80 pb-4">
+                        <div>
+                            <span class="text-xs font-mono text-cyan-400 uppercase tracking-wider">Payments Platform Modernization (Growth-Stage)</span>
+                            <h3 class="text-xl font-bold tracking-tight">Evolving legacy transactional engines into modular BaaS architectures</h3>
+                        </div>
+                        <div class="flex items-center gap-2 bg-[#090C15] px-3 py-1.5 rounded-lg border border-zinc-850 text-xs font-mono">
+                            <span>System Prototypes:</span>
+                            <a href="https://www.figma.com/proto/jqHbAMnWKghbN7emueCQDT/enterprise?node-id=1-4334&starting-point-node-id=1%3A4334" target="_blank" class="text-cyan-400 hover:underline">Config Hub</a>
+                            <span class="text-slate-700">|</span>
+                            <a href="https://www.figma.com/proto/L9EdcQXvcoro79lvNEJpqS/Internet-Banking?node-id=8-4101&starting-point-node-id=8%3A4101" target="_blank" class="text-cyan-400 hover:underline">Banking Portal</a>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                        <div class="lg:col-span-8 space-y-4 text-xs leading-relaxed text-slate-300">
+                            <div>
+                                <h4 class="font-bold text-slate-200 font-mono uppercase tracking-wider">The Failure Mode:</h4>
+                                <p class="text-slate-400 mt-1">Coupling between merchant experience layouts and core system-of-record behavior created critical database performance bottlenecks, blocked multi-tenant scalability, and slowed white-label partner onboarding.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-200 font-mono uppercase tracking-wider">What I Changed:</h4>
+                                <p class="text-slate-400 mt-1">I led a phased evolution from legacy virtual-balance models ("conta gráfica") to a real-time ledger core with decoupled system boundaries. I designed native, multi-level payment split and transaction fee engines directly in the core data schema, enabling marketplace-style allocations calculated on-the-fly. To secure operations under sudden anti-fraud and compliance regulatory adjustments, I designed and deployed dual-control (Maker-Checker) structures, step-up MFA, velocity trackers, and row-level encrypting.</p>
+                            </div>
+                            <div class="p-4 rounded-xl bg-cyan-500/5 border border-cyan-500/10 mt-2">
+                                <h5 class="font-bold text-cyan-300 font-mono uppercase text-[10px] tracking-wide mb-1">STRATEGIC ALIGNMENT: THE GUEST CHECKOUT WEDGE (HAC PoC)</h5>
+                                <p class="text-slate-400 text-[11px] leading-relaxed">
+                                    To prove the capability of this white-label platform core to enterprise buyers, we designed a high-conversion, low-friction B2B2C Checkout Portal for a massive oncology hospital (HAC). This showcased the platform's multi-tenant split engine, instant Pix routing, and Zero-PII storage patterns, proving we could scale multi-party cash routing to secure larger municipal partner contracts.
+                                </p>
+                                <div class="mt-2.5">
+                                    <a href="https://www.figma.com/board/1cAOjTDAdGsBtS5TMwueX2/Untitled?t=AhkkGvusvgJU1NZj-1" target="_blank" class="text-cyan-400 font-mono text-[10px] hover:underline flex items-center gap-1">
+                                        <i data-lucide="external-link" class="h-3 w-3"></i> View HAC Product Board &amp; Specs
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="lg:col-span-4 bg-zinc-950 p-6 rounded-xl border border-zinc-800 space-y-4">
+                            <h4 class="text-xs font-semibold text-slate-400 font-mono uppercase tracking-wider">PLATFORM PERFORMANCE EVOLUTION</h4>
+                            <div class="space-y-3.5 text-xs">
+                                <div class="flex justify-between border-b border-zinc-800 pb-1.5 font-mono text-[10px]">
+                                    <span class="text-slate-500">LEGACY SYSTEM (V1/V2)</span>
+                                    <span class="text-slate-500">FORBS ENTERPRISE (V3)</span>
+                                </div>
+                                <div class="flex justify-between text-[11px]">
+                                    <span class="text-slate-400">Virtual balance logic</span>
+                                    <span class="text-cyan-400 font-bold font-mono">Real-time ledger hub</span>
+                                </div>
+                                <div class="flex justify-between text-[11px]">
+                                    <span class="text-slate-400">Manual backoffice steps</span>
+                                    <span class="text-cyan-400 font-bold font-mono">Automated, audited flows</span>
+                                </div>
+                                <div class="flex justify-between text-[11px]">
+                                    <span class="text-slate-400">High cloud costs (GCP)</span>
+                                    <span class="text-amber-400 font-bold font-mono">~1/3 cost via Go/AWS</span>
+                                </div>
+                                <div class="flex justify-between text-[11px]">
+                                    <span class="text-slate-400">High user disputes</span>
+                                    <span class="text-teal-400 font-bold font-mono">60% lower dispute rate</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CS 2: TAXONOMY -->
+                <div id="cs-taxonomy" class="cs-content hidden space-y-6">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 border-b border-zinc-800/80 pb-4">
+                        <div>
+                            <span class="text-xs font-mono text-cyan-400 uppercase tracking-wider">Applied AI &amp; Enterprise Integration (Bugcrowd)</span>
+                            <h3 class="text-xl font-bold tracking-tight">Structured machine-readable taxonomy &amp; automated triage pipelines</h3>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                        <div class="lg:col-span-8 space-y-4 text-xs leading-relaxed text-slate-300">
+                            <div>
+                                <h4 class="font-bold text-slate-200 font-mono uppercase tracking-wider">The Failure Mode:</h4>
+                                <p class="text-slate-400 mt-1">Manual vulnerability scoring and human triage created highly subjective severity variations. This triggered constant SLA disputes and pricing friction between security researchers and corporate accounts, creating massive operational backlogs.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-200 font-mono uppercase tracking-wider">What I Changed:</h4>
+                                <p class="text-slate-400 mt-1">I remodeled the static, tabular Vulnerability Rating Taxonomy (VRT) into machine-readable JSON layouts. This translated expert threat assessment capabilities into precise, automated system logic. I designed integration boundaries to seamlessly route and synchronize this standardized data directly with external enterprise corporate environments (Jira, GitHub, ServiceNow) and used these schemas to deploy custom ML models for auto-matching threats.</p>
+                            </div>
+                        </div>
+
+                        <div class="lg:col-span-4 bg-zinc-950 p-6 rounded-xl border border-zinc-800 flex flex-col justify-between">
+                            <div>
+                                <h4 class="text-xs font-semibold text-slate-400 font-mono uppercase tracking-wider mb-2">TAXONOMY ENGINE OUTCOME</h4>
+                                <ul class="space-y-2 text-xs">
+                                    <li class="flex justify-between font-mono text-[11px] text-slate-400">
+                                        <span>Detection Consistency:</span>
+                                        <span class="text-teal-400 font-bold">+30%</span>
+                                    </li>
+                                    <li class="flex justify-between font-mono text-[11px] text-slate-400">
+                                        <span>Manual Triage Drag:</span>
+                                        <span class="text-teal-400 font-bold">-80%</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="pt-4 border-t border-zinc-800 mt-4 text-[10px] text-slate-500 leading-relaxed">
+                                Demonstrates: Knowledge encoding, system interoperability, automated API-first pipelines.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CS 3: BENEFITS -->
+                <div id="cs-benefits" class="cs-content hidden space-y-6">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 border-b border-zinc-800/80 pb-4">
+                        <div>
+                            <span class="text-xs font-mono text-cyan-400 uppercase tracking-wider">0-1 Infrastructure &amp; Public Trust (BluPay / CieloBlu)</span>
+                            <h3 class="text-xl font-bold tracking-tight">Decentralized ledger school benefit ecosystem in São Paulo, Brazil</h3>
+                        </div>
+                        <div class="flex items-center gap-2 bg-zinc-950 px-3 py-1.5 rounded-lg border border-zinc-800 text-xs font-mono">
+                            <span>whiteboard link:</span>
+                            <a href="https://www.figma.com/board/rB4QdkcJqL6kBjzqJHi7h0/Costumer-Journey-map--Community-?node-id=0-1" target="_blank" class="text-cyan-400 hover:underline">Ecosystem Journey</a>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                        <div class="lg:col-span-8 space-y-4 text-xs leading-relaxed text-slate-300">
+                            <div>
+                                <h4 class="font-bold text-slate-200 font-mono uppercase tracking-wider">The Failure Mode:</h4>
+                                <p class="text-slate-400 mt-1">Traditional municipality distribution of student supply benefits suffered from systemic financial leakage, processing delays, and highly fragmented physical store networks unable to reconcile accounts.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-200 font-mono uppercase tracking-wider">What I Changed:</h4>
+                                <p class="text-slate-400 mt-1">I mapped and orchestrated the entire multi-stakeholder ecosystem into a unified transactional pipeline. I leveraged private distributed ledger technology (Corda DLT) to ensure instant, auditable transaction settlement, complete data tracking immutability, and native cryptographic checks across student wallets, merchant stores, and city databases.</p>
+                            </div>
+                        </div>
+
+                        <div class="lg:col-span-4 bg-zinc-950 p-6 rounded-xl border border-zinc-800 flex flex-col justify-between">
+                            <div>
+                                <h4 class="text-xs font-semibold text-slate-400 font-mono uppercase tracking-wider mb-2">ECOSYSTEM IMPACT</h4>
+                                <div class="font-mono text-[9px] text-slate-400 space-y-1">
+                                    <div class="flex justify-between"><span>Distributed:</span> <span class="text-slate-200">$20M+</span></div>
+                                    <div class="flex justify-between"><span>Endpoints:</span> <span class="text-slate-200">1M+</span></div>
+                                    <div class="flex justify-between"><span>Mismatches:</span> <span class="text-teal-400 font-bold">Zero</span></div>
+                                </div>
+                            </div>
+                            <div class="pt-4 border-t border-zinc-800 mt-4 text-[10px] text-slate-500 leading-relaxed">
+                                Admitted directly into the Central Bank of Brazil's LIFT Lab financial innovation project, leading to corporate acquisition.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- SECTION 4: THE REGULATORY POSTSCRIPT (TRANSPARENT RECONCILIATION) -->
+            <div class="p-6 bg-zinc-900/30 border border-zinc-800 rounded-2xl space-y-4">
+                <div class="flex items-center gap-2 text-amber-500">
+                    <i data-lucide="alert-triangle" class="h-5 w-5"></i>
+                    <h3 class="text-sm font-bold font-mono uppercase tracking-wider">Exit Catalyst: Adaptive Security &amp; Compliance Regulation</h3>
+                </div>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                    Following a massive wave of transactions fraud across the ecosystem, Brazil's regulatory landscape shifted dramatically. I directed the entire architectural overhaul of Forbs Enterprise to align with these strict new anti-fraud requirements. Currently, active product rollouts and partner integrations are on hold while the company navigates compliance checks and licenses from the Central Bank of Brazil. Because my peak executive value is unlocked during high-velocity building, scaling, and transformation phases, I am actively seeking my next transition role.
+                </p>
+            </div>
+        </section>
+
+        <!-- SECTION 4: SANITIZED APPENDIX (THE VAULT) -->
+        <section id="sec-appendix" class="hidden space-y-12 transition-all duration-300">
+            <div class="space-y-4">
+                <div class="border-b border-zinc-800 pb-3">
+                    <h2 class="text-2xl font-black text-slate-200">Sanitized Artifact Vault</h2>
+                    <p class="text-xs text-slate-500 font-mono mt-1 uppercase tracking-wider">Sanitized structures illustrating systemic design without compromising proprietary intellectual property.</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                
+                <!-- Left: Interactive API specification -->
+                <div class="lg:col-span-7 bg-zinc-900/10 border border-zinc-800 rounded-2xl p-6 space-y-4">
+                    <div class="flex justify-between items-center border-b border-zinc-800 pb-3">
+                        <h3 class="text-sm font-semibold font-mono text-slate-300 uppercase tracking-wider">Ledger Split API Payload</h3>
+                        <span class="text-[10px] font-mono text-slate-500 bg-zinc-950 px-2.5 py-0.5 rounded border border-zinc-800">V3 SCHEMA</span>
+                    </div>
+
+                    <div class="grid grid-cols-3 gap-2">
+                        <button onclick="switchApiTab('endpoint')" class="api-tab-btn py-1 px-3 text-[10px] font-mono rounded bg-cyan-600 text-white" id="api-btn-endpoint">POST Settle</button>
+                        <button onclick="switchApiTab('raw-json')" class="api-tab-btn py-1 px-3 text-[10px] font-mono rounded bg-zinc-950 text-slate-400 border border-zinc-800 hover:text-slate-200" id="api-btn-raw-json">Raw JSON</button>
+                        <button onclick="switchApiTab('split-logic')" class="api-tab-btn py-1 px-3 text-[10px] font-mono rounded bg-zinc-950 text-slate-400 border border-zinc-800 hover:text-slate-200" id="api-btn-split-logic">Invariants</button>
+                    </div>
+
+                    <div id="api-panel-endpoint" class="api-panel space-y-3 text-xs">
+                        <div class="bg-zinc-950 p-4 rounded-lg font-mono text-xs border border-zinc-800 space-y-1">
+                            <div class="text-teal-400"><span class="bg-teal-500/10 text-teal-400 px-1.5 py-0.5 rounded text-[10px] font-bold mr-2">POST</span>https://api.forbshub.com/v3/transactions/settle</div>
+                            <div class="text-slate-500 mt-2">// Programmatically routes incoming transactions across split entities.</div>
+                        </div>
+                        <ul class="space-y-1.5 text-slate-400 font-mono text-[10px] list-disc pl-4">
+                            <li><strong class="text-slate-300">root_marketplace_id</strong>: Anchors the master white-label tenant node.</li>
+                            <li><strong class="text-slate-300">ledger_splits</strong>: Decoupled target account routes with custom latencies (D+1, D+15, D+60).</li>
+                        </ul>
+                    </div>
+
+                    <div id="api-panel-raw-json" class="api-panel hidden">
+                        <pre class="bg-zinc-950 p-4 rounded-lg font-mono text-[10px] text-cyan-300 overflow-x-auto border border-zinc-800 custom-scrollbar max-h-64 leading-relaxed">
+{
+  "$schema": "https://api.forbshub.com/schemas/transaction-v3.json",
+  "transaction_id": "tx_8f93e1a2b3c4d5e6",
+  "timestamp": "2026-07-20T13:59:08Z",
+  "root_marketplace_id": "mp_orion_master_001",
+  "financial_payload": {
+    "currency": "BRL",
+    "gross_amount": 1000.00
+  },
+  "ledger_splits": [
+    {
+      "destination_account_id": "acc_hac_operating_992",
+      "allocation_percentage": 98.00,
+      "settlement_latency": "D+1"
+    }
+  ]
+}</pre>
+                    </div>
+
+                    <div id="api-panel-split-logic" class="api-panel hidden space-y-3 text-xs">
+                        <h4 class="font-semibold text-slate-200">System Transaction Invariants:</h4>
+                        <div class="bg-zinc-950 p-4 rounded-lg font-mono text-[10px] text-slate-400 border border-zinc-800 leading-relaxed">
+                            1. SUM(ledger_splits.allocation_percentage) == 100.00% <br>
+                            2. ledger_splits.gross_amount == root_transaction.gross_amount <br>
+                            3. Double-entry guarantee: No account balance can be mutated without a corresponding credit/debit transaction node.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Interactive math simulator -->
+                <div class="lg:col-span-5 bg-zinc-900/10 border border-zinc-800 rounded-2xl p-6 space-y-4">
+                    <div class="flex justify-between items-center border-b border-zinc-800 pb-3">
+                        <h3 class="text-sm font-semibold font-mono text-slate-300 uppercase tracking-wider">"Net-Zero" Tax Simulator</h3>
+                        <span class="text-[10px] font-mono text-slate-500">MATH PARADIGM</span>
+                    </div>
+                    <p class="text-[11px] text-slate-400 leading-relaxed">
+                        Simulating our tax calculation algorithms converting liabilities into targeted hospital funding (HAC) at net-zero cost.
+                    </p>
+
+                    <div class="space-y-3">
+                        <div class="space-y-1">
+                            <label class="block text-[10px] font-mono text-slate-400 uppercase">Doador Entity Type</label>
+                            <select id="calc-entity" onchange="runLiveCalculator()" class="w-full bg-zinc-950 border border-zinc-800 rounded-lg px-3 py-1.5 text-xs focus:outline-none focus:border-cyan-500 text-slate-300 font-mono">
+                                <option value="PJ">Pessoa Jurídica (Lucro Real IRPJ)</option>
+                                <option value="PF">Pessoa Física (Declaração Completa)</option>
+                            </select>
+                        </div>
+                        <div class="space-y-1">
+                            <label class="block text-[10px] font-mono text-slate-400 uppercase">Annual Tax Liability</label>
+                            <div class="relative">
+                                <span class="absolute left-3 top-1.5 text-xs font-mono text-slate-500">R$</span>
+                                <input type="number" id="calc-amount" value="500000" oninput="runLiveCalculator()" class="w-full bg-zinc-950 border border-zinc-800 rounded-lg pl-9 pr-3 py-1.5 text-xs font-mono focus:outline-none focus:border-cyan-500 text-slate-200">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-4 bg-zinc-950 rounded-lg border border-zinc-800 space-y-2 text-xs">
+                        <div class="flex justify-between">
+                            <span class="text-slate-500">Limit Allocation Percent:</span>
+                            <span class="font-mono text-cyan-400" id="calc-pct">(1%)</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-slate-500">Deductible Investment:</span>
+                            <span class="font-mono text-slate-300 font-bold" id="calc-suggested">R$ 5.000,00</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-slate-500">Assigned Project:</span>
+                            <span class="font-mono text-slate-300" id="calc-target">PRONON (Radioterapia)</span>
+                        </div>
+                        <div class="pt-2 border-t border-zinc-800 flex justify-between items-center font-mono text-[11px]">
+                            <span class="text-slate-300 font-bold">Calculated Net Cost:</span>
+                            <span class="text-teal-400 font-bold">R$ 0,00 (100% Tax Offset)</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Interactive Database ERD Inspector -->
+            <div class="bg-zinc-900/10 border border-zinc-800 rounded-2xl p-6 space-y-4 mt-8">
+                <div class="flex justify-between items-center border-b border-zinc-800 pb-3">
+                    <h3 class="text-sm font-semibold font-mono text-slate-300 uppercase tracking-wider">Database Entity &amp; Schema Invariant Inspector</h3>
+                    <span class="text-[10px] font-mono text-slate-500">CLICK ENTITY TO INSPECT INVARIANTS</span>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-6 gap-3">
+                    <button onclick="inspectDb('marketplace')" class="db-tab-btn py-2 px-3 text-left text-[10px] font-mono rounded bg-zinc-950 border border-zinc-800 text-slate-300 hover:border-cyan-500/30 transition-all" id="db-btn-marketplace">marketplace</button>
+                    <button onclick="inspectDb('legal_entity')" class="db-tab-btn py-2 px-3 text-left text-[10px] font-mono rounded bg-zinc-950 border border-zinc-800 text-slate-300 hover:border-cyan-500/30 transition-all" id="db-btn-legal_entity">legal_entity</button>
+                    <button onclick="inspectDb('account')" class="db-tab-btn py-2 px-3 text-left text-[10px] font-mono rounded bg-zinc-950 border border-zinc-800 text-slate-300 hover:border-cyan-500/30 transition-all" id="db-btn-account">account</button>
+                    <button onclick="inspectDb('transaction')" class="db-tab-btn py-2 px-3 text-left text-[10px] font-mono rounded bg-cyan-600 border border-transparent text-white" id="db-btn-transaction">transaction</button>
+                    <button onclick="inspectDb('split')" class="db-tab-btn py-2 px-3 text-left text-[10px] font-mono rounded bg-zinc-950 border border-zinc-800 text-slate-300 hover:border-cyan-500/30 transition-all" id="db-btn-split">split</button>
+                    <button onclick="inspectDb('provider')" class="db-tab-btn py-2 px-3 text-left text-[10px] font-mono rounded bg-zinc-950 border border-zinc-800 text-slate-300 hover:border-cyan-500/30 transition-all" id="db-btn-provider">provider</button>
+                </div>
+
+                <div class="bg-zinc-950 p-5 rounded-xl border border-zinc-800 space-y-2 text-xs">
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="database" class="h-4.5 w-4.5 text-cyan-400"></i>
+                        <h4 class="font-mono font-bold text-cyan-300 text-sm" id="inspect-title">transaction</h4>
+                    </div>
+                    <div class="border-t border-zinc-800 pt-2 space-y-1 text-slate-400 font-mono text-[11px]" id="inspect-fields">
+                        <div>id : string «PK»</div>
+                        <div>account_id : string «FK»</div>
+                        <div>amount : decimal</div>
+                        <div>timestamp : epoch</div>
+                    </div>
+                    <div class="pt-2 text-[10px] text-slate-500 italic border-t border-zinc-800" id="inspect-desc">
+                        Defines virtual statements and balances inside the core system. Invariants: amount can never be null; timestamp is generated automatically.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-zinc-800/80 py-12 px-6 mt-16 bg-[#090C15]">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="space-y-1 text-center md:text-left">
+                <div class="font-bold text-slate-200">Renata Rocha</div>
+                <div class="text-[11px] text-slate-500 font-mono">San Francisco Bay Area, CA &bull; renata.roch9@gmail.com</div>
+            </div>
+            
+            <div class="flex gap-4 text-xs font-mono">
+                <a href="https://www.linkedin.com/in/renata-rocha-/" target="_blank" class="text-cyan-400 hover:underline">LinkedIn</a>
+                <span class="text-slate-800">|</span>
+                <span class="text-slate-500">Tel: +1 (408) 663-8646</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts for fully dynamic visual controls -->
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Navigation tab switching
+        function switchTab(tabId) {
+            // Hide all content wrappers
+            document.getElementById('sec-start-here').classList.add('hidden');
+            document.getElementById('sec-pov-model').classList.add('hidden');
+            document.getElementById('sec-case-studies').classList.add('hidden');
+            document.getElementById('sec-appendix').classList.add('hidden');
+
+            // Deactivate visual buttons
+            document.querySelectorAll('.nav-tab').forEach(tab => {
+                tab.classList.remove('bg-cyan-600', 'text-white');
+                tab.classList.add('text-slate-400', 'hover:text-slate-200');
+            });
+
+            // Activate chosen components
+            document.getElementById('sec-' + tabId).classList.remove('hidden');
+            const activeTab = document.getElementById('tab-' + tabId);
+            activeTab.classList.remove('text-slate-400', 'hover:text-slate-200');
+            activeTab.classList.add('bg-cyan-600', 'text-white');
+        }
+
+        // Case studies tab switching
+        function switchCaseStudy(csId) {
+            document.querySelectorAll('.cs-content').forEach(content => content.classList.add('hidden'));
+            document.querySelectorAll('.cs-tab').forEach(tab => {
+                tab.classList.remove('bg-cyan-600', 'text-white');
+                tab.classList.add('text-slate-400', 'hover:text-slate-200');
+            });
+
+            document.getElementById(csId).classList.remove('hidden');
+            const activeTab = document.getElementById(csId.replace('cs-', 'cs-tab-'));
+            activeTab.classList.remove('text-slate-400', 'hover:text-slate-200');
+            activeTab.classList.add('bg-cyan-600', 'text-white');
+        }
+
+        // API Playground tabs
+        function switchApiTab(apiTabId) {
+            document.querySelectorAll('.api-panel').forEach(panel => panel.classList.add('hidden'));
+            document.querySelectorAll('.api-tab-btn').forEach(btn => {
+                btn.classList.remove('bg-cyan-600', 'text-white');
+                btn.classList.add('bg-zinc-950', 'text-slate-400', 'border', 'border-zinc-800', 'hover:text-slate-200');
+            });
+
+            document.getElementById('api-panel-' + apiTabId).classList.remove('hidden');
+            const activeBtn = document.getElementById('api-btn-' + apiTabId);
+            activeBtn.classList.remove('bg-zinc-950', 'text-slate-400', 'border', 'border-zinc-800', 'hover:text-slate-200');
+            activeBtn.classList.add('bg-cyan-600', 'text-white');
+        }
+
+        // Live tax simulator engine
+        function runLiveCalculator() {
+            const entityType = document.getElementById('calc-entity').value;
+            const amountInput = document.getElementById('calc-amount');
+            let amount = parseFloat(amountInput.value);
+            
+            if (isNaN(amount) || amount < 0) {
+                amount = 0;
+            }
+
+            let allocationPercentage = 1;
+            let targetProject = "PRONON (Radioterapia)";
+            let percentageLabel = "(1%)";
+
+            if (entityType === 'PF') {
+                allocationPercentage = 6;
+                targetProject = "FIA (Cuidado Pediatria)";
+                percentageLabel = "(6%)";
+            }
+
+            const suggestedAllocation = (amount * (allocationPercentage / 100));
+            
+            document.getElementById('calc-pct').textContent = percentageLabel;
+            document.getElementById('calc-suggested').textContent = "R$ " + suggestedAllocation.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+            document.getElementById('calc-target').textContent = targetProject;
+        }
+
+        // Interactive Database Schema data objects
+        const dbMeta = {
+            marketplace: {
+                title: "marketplace",
+                fields: ["id : string «PK»"],
+                desc: "Defines the root master tenant node mapping to specific partner ecosystems."
+            },
+            legal_entity: {
+                title: "legal_entity",
+                fields: ["id : string «PK»", "marketplace_id : string «FK»", "tax_id : string"],
+                desc: "Represents either an individual (PF) or corporate (PJ) operator node inside the platform tree."
+            },
+            account: {
+                title: "account",
+                fields: ["id : string «PK»", "marketplace_id : string «FK»", "legal_entity_id : string «FK»", "type : string ('payment' | 'individual')"],
+                desc: "Central ledger record keeping transactional anchor balances. Direct prerequisite for modules."
+            },
+            transaction: {
+                title: "transaction",
+                fields: ["id : string «PK»", "account_id : string «FK»", "amount : decimal", "timestamp : epoch"],
+                desc: "Virtual statement database records reflecting internal double-entry ledger allocations."
+            },
+            split: {
+                title: "split",
+                fields: ["id : string «PK»", "account_id_source : string «FK»", "account_id_target : string «FK»", "allocation_percentage : decimal"],
+                desc: "Rules Engine defining multi-party transaction splits calculated on-the-fly per contract parameters."
+            },
+            provider: {
+                title: "provider",
+                fields: ["id : string «PK»", "account_provider_id : string «FK»", "name : string"],
+                desc: "Adapters connecting internal ledgers to physical bank rails (Boleto/Pix clearing channels)."
+            }
+        };
+
+        // DB Inspector interaction
+        function inspectDb(entityId) {
+            document.querySelectorAll('.db-tab-btn').forEach(btn => {
+                btn.classList.remove('bg-cyan-600', 'text-white', 'border-transparent');
+                btn.classList.add('bg-zinc-950', 'text-slate-300', 'border-zinc-800', 'hover:border-cyan-500/30');
+            });
+
+            const activeBtn = document.getElementById('db-btn-' + entityId);
+            activeBtn.classList.remove('bg-zinc-950', 'text-slate-300', 'border-zinc-800', 'hover:border-cyan-500/30');
+            activeBtn.classList.add('bg-cyan-600', 'text-white', 'border-transparent');
+
+            const item = dbMeta[entityId];
+            document.getElementById('inspect-title').textContent = item.title;
+            document.getElementById('inspect-desc').textContent = item.desc;
+            
+            const fieldsContainer = document.getElementById('inspect-fields');
+            fieldsContainer.innerHTML = '';
+            item.fields.forEach(f => {
+                const div = document.createElement('div');
+                div.textContent = f;
+                fieldsContainer.appendChild(div);
+            });
+        }
+
+        // Initialize calculators and active views
+        window.addEventListener('DOMContentLoaded', () => {
+            runLiveCalculator();
+        });
+    </script>
+</body>
+</html>
+```
+eof
